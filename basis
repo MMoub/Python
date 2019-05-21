@@ -1,0 +1,14 @@
+def b(x):
+ d = 1
+ suma = 0
+ if x >= 0:
+    for i in range(1, x+1):
+        d = d * i
+        suma = suma + d 
+    return suma
+ if x == 0:
+    return 1
+
+
+n = int(input('please enter an integer:'))
+print('the sumption from 1! to %d! = %d' %(n, b(n)))
