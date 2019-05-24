@@ -1,0 +1,14 @@
+def Narcissistic_number(x):
+    suma = 0
+    Narcissistic_number_len = len(x)
+    for i in range(len(x)):
+        suma += int(x[i]) ** Narcissistic_number_len
+    if int(x) == suma:
+        print('%s is a flower number' %x)
+    else:
+        print('%s is not a flower number' %x)
+
+
+
+n = str(input('please enter an integer:'))
+Narcissistic_number(n)
